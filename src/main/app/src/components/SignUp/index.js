@@ -7,9 +7,11 @@ import * as ROUTES from '../../constants/routes';
 import * as ROLES from '../../constants/roles';
 
 const SignUpPage = () => (
-  <div>
+  <div className="auth-wrapper">
+    <div className="auth-inner">
     <h3>Sign Up</h3>
     <SignUpForm />
+    </div>
   </div>
 );
 

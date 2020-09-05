@@ -10,8 +10,9 @@ import * as ROUTES from '../../constants/routes';
 import './signin.css'
 
 const SignInPage = () => (
-  <div>
-    <h3>SignIn</h3>
+  <div className="auth-wrapper">
+    <div className="auth-inner">
+    <h3>Sign In</h3>
     <SignInForm />
     <PasswordForgetLink />
     <SignUpLink />
@@ -21,6 +22,7 @@ const SignInPage = () => (
     <SignInGoogle />
     <SignInFacebook />
     <SignInTwitter />
+    </div>
   </div>
 );
 

@@ -3,13 +3,6 @@
 * {
   box-sizing: border-box;
 }
-body {
-  background: #1C8EF9 !important;
-  min-height: 100vh;
-  display: flex;
-  font-weight: 400;
-  font-family: 'Fira Sans', sans-serif;
-}
 
 h1,h2,h3,h4,h5,h6,label,span {
   font-weight: 500;
@@ -21,16 +14,16 @@ body, html, .App, #root, .auth-wrapper {
   height: 100%;
 }
 
-.navbar-light {
-  background-color: #ffffff;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-}
-
 .auth-wrapper {
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: left;
+  background: #1C8EF9 !important;
+  min-height: 100vh;
+  display: flex;
+  font-weight: 400;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 .auth-inner {
@@ -44,7 +37,7 @@ body, html, .App, #root, .auth-wrapper {
 }
 
 .auth-wrapper .form-control:focus {
-  border-color: #167bff;
+  border-color: #1C8EF9;
   box-shadow: none;
 }
 
@@ -69,9 +62,12 @@ body, html, .App, #root, .auth-wrapper {
 }
 
 .forgot-password a {
-  color: #167bff;
+  color:#1C8EF9;
 }
 
+.btn{
+  color:#1C8EF9;
+}
 /* vertical line */
 .hl {
     position: relative;

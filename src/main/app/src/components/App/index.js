@@ -10,6 +10,7 @@ import PasswordForgetPage from '../PasswordForget';
 import HomePage from '../Home';
 import AccountPage from '../Account';
 import AdminPage from '../Admin';
+import ClinicHomePage from '../ClinicHome'
 import './index.css'
 
 import * as ROUTES from '../../constants/routes';
@@ -20,8 +21,8 @@ const App = () => (
     <div>
       <Navigation />
 
-      <div className="auth-wrapper">
-        <div className="auth-inner">
+      <div className="">
+        <div className="">
           <Switch>
           <Route exact path={ROUTES.LANDING} component={LandingPage} />
           <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
@@ -33,6 +34,7 @@ const App = () => (
           <Route path={ROUTES.HOME} component={HomePage} />
           <Route path={ROUTES.ACCOUNT} component={AccountPage} />
           <Route path={ROUTES.ADMIN} component={AdminPage} />
+          <Route path={ROUTES.CLINIC_HOME} component={ClinicHomePage} />
           </Switch>
         </div>
       </div>

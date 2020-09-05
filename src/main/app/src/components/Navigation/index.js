@@ -30,15 +30,18 @@ const NavigationAuth = ({ authUser }) => (
             <Link className="nav-link" to={ROUTES.HOME}>Home</Link>
           </li>
           <li className="nav-item">
+            <Link className="nav-link" to={ROUTES.CLINIC_HOME}>ClinicHome</Link>
+          </li>
+          <li className="nav-item">
             <Link className="nav-link" to={ROUTES.ACCOUNT}>Account</Link>
           </li>
-          {!!authUser.roles[ROLES.ADMIN] && (
+          {/*{!!authUser.roles[ROLES.ADMIN] && (
             <li className="nav-item">
               <Link className="nav-link" to={ROUTES.ADMIN}>Admin</Link>
             </li>
-          )}
+          )}*/}
           <li className="nav-item">
-            <SignOutButton />
+          <Link className="nav-link" to={ROUTES.SIGN_IN}><SignOutButton /></Link>
           </li>
         </ul>
       </div>
