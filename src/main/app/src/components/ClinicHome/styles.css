@@ -1,0 +1,28 @@
+.ClinicHomePage {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+.search-bar {
+margin-top: 0px;
+margin-bottom: 10%;
+}
+
+.item-content {
+width: 80%;
+margin: auto;
+margin-top: 15%;
+}
+
+.img-row {
+text-align: center;
+}
+
+.img-format {
+display: block;
+height: 75px;
+width: auto;
+margin: auto;
+}
+  
