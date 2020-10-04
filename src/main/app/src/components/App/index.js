@@ -10,7 +10,9 @@ import PasswordForgetPage from '../PasswordForget';
 import HomePage from '../Home';
 import AccountPage from '../Account';
 import AdminPage from '../Admin';
-import ClinicHomePage from '../ClinicHome'
+import ClinicHomePage from '../ClinicHome';
+import Checkout from '../PatientRegistration/Checkout';
+
 import './index.css'
 
 import * as ROUTES from '../../constants/routes';
@@ -35,6 +37,7 @@ const App = () => (
           <Route path={ROUTES.ACCOUNT} component={AccountPage} />
           <Route path={ROUTES.ADMIN} component={AdminPage} />
           <Route path={ROUTES.CLINIC_HOME} component={ClinicHomePage} />
+          <Route exact path={ROUTES.PATIENT_REGISTRATION} component={Checkout} />
           </Switch>
         </div>
       </div>

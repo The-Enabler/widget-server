@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 import "./card-stats.scss";
 import SearchBar from "material-ui-search-bar";
+import * as ROUTES from '../../constants/routes';
 
 import { Card, Container, CardBody, CardFooter, Row, Col } from "reactstrap";
 
@@ -17,7 +18,12 @@ export default function ClinicHomePage() {
         <div className="content">
           <Row>
             <Col lg="3" md="3" sm="6" xs="6">
-              <Card className="card-stats">
+              <Card
+                  tag="a"
+                  onClick={(event) => (window.location.href = ROUTES.PATIENT_REGISTRATION)}
+                  style={{ cursor: "pointer" }}
+                  className="card-stats"
+                >
                 <CardBody>
                   <Row>
                     <Col>
@@ -32,7 +38,7 @@ export default function ClinicHomePage() {
                   </Row>
                 </CardBody>
                 <CardFooter>
-                  <div className="text-center">Service 1</div>
+                  <div className="text-center">Appointment</div>
                 </CardFooter>
               </Card>
             </Col>
@@ -52,7 +58,7 @@ export default function ClinicHomePage() {
                   </Row>
                 </CardBody>
                 <CardFooter>
-                  <div className="text-center">Service 1</div>
+                  <div className="text-center">Service 2</div>
                 </CardFooter>
               </Card>
             </Col>
@@ -72,7 +78,7 @@ export default function ClinicHomePage() {
                   </Row>
                 </CardBody>
                 <CardFooter>
-                  <div className="text-center">Service 1</div>
+                  <div className="text-center">Service 3</div>
                 </CardFooter>
               </Card>
             </Col>
@@ -92,7 +98,7 @@ export default function ClinicHomePage() {
                   </Row>
                 </CardBody>
                 <CardFooter>
-                  <div className="text-center">Service 1</div>
+                  <div className="text-center">Service 4</div>
                 </CardFooter>
               </Card>
             </Col>
@@ -114,7 +120,7 @@ export default function ClinicHomePage() {
                   </Row>
                 </CardBody>
                 <CardFooter>
-                  <div className="text-center">Service 1</div>
+                  <div className="text-center">Service 5</div>
                 </CardFooter>
               </Card>
             </Col>
@@ -134,7 +140,7 @@ export default function ClinicHomePage() {
                   </Row>
                 </CardBody>
                 <CardFooter>
-                  <div className="text-center">Service 1</div>
+                  <div className="text-center">Service 6</div>
                 </CardFooter>
               </Card>
             </Col>
@@ -154,7 +160,7 @@ export default function ClinicHomePage() {
                   </Row>
                 </CardBody>
                 <CardFooter>
-                  <div className="text-center">Service 1</div>
+                  <div className="text-center">Service 7</div>
                 </CardFooter>
               </Card>
             </Col>
@@ -174,7 +180,7 @@ export default function ClinicHomePage() {
                   </Row>
                 </CardBody>
                 <CardFooter>
-                  <div className="text-center">Service 1</div>
+                  <div className="text-center">Service 8</div>
                 </CardFooter>
               </Card>
             </Col>
